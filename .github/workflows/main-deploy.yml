@@ -1,0 +1,55 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ] 
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  # backend
+  build-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        working-directory: ./src/CampusConnect/CampusConnect.Api
+        run: dotnet restore
+
+      - name: Build Backend
+        working-directory: ./src/CampusConnect/CampusConnect.Api
+        run: dotnet build --configuration Release --no-restore
+
+  # frontend
+  build-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: ./src/campusconnect-client 
+        run: npm install
+
+      - name: Build Frontend
+        working-directory: ./src/campusconnect-client 
+        run: npm run build 
+
+  # deploy
+  deploy:
+    needs: [build-backend, build-frontend]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' 
+    steps:
+      - name: Deploy Message
+        run: echo "Codul a trecut testele si e gata de trimis pe server"

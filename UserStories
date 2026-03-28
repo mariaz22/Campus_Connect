@@ -1,0 +1,65 @@
+As a User, I want to register using my institutional email address and a password, so that I can access my information and the platform's features.
+
+As a User, I want to be able to log in (authenticate), so that I can access my account.
+
+As a User, I want to be able to view and edit my profile, so that I can keep my status up-to-date.
+
+As a User, I want to have a specific role (e.g., Student, Teacher), so that I can access only the functionalities relevant to my role.
+
+As an Administrator, I want to deactivate or suspend user accounts that violate platform policies, so that I can prevent people who don't follow the guidelines from using the platform.
+
+As an Administrator, I want to be able to grant the administrator role to other users, so that I can have better platform organization.
+
+As a User, I want to view university announcements in chronological order, so that I can keep up with important news.
+
+As a User, I want to be able to filter announcements by their categories, so that I can easily find the information that interests me.
+
+As a User, I want to be able to save (bookmark) announcements, so that I can keep track of important announcements or those that will help me in the future.
+
+As a User, I want to be able to add reminders, so that I can be alerted about different upcoming events or tasks that need to be done.
+
+As a User, I want to receive notifications when new announcements are published, so that I can ensure I do not miss important information.
+
+As a User, I want to be able to view a list of upcoming events, so that I can plan my schedule in advance.
+
+As a User, I want to be able to register for (RSVP to) events, so that I can participate in them.
+
+As a Professor, I want to be able to publish new announcements, so that I can communicate with the rest of the community.
+
+As a Professor, I want to be able to edit announcements, so that I can correct potential mistakes or information changes.
+
+As a Professor, I want to be able to target announcements to specific groups, so that I can avoid transmitting irrelevant information to users who do not need it.
+
+As a Professor, I want to be able to accept or reject members from the groups I have created, so that I can have better management of group members.
+
+As an Administrator, I want to be able to delete announcements, so that I can prevent irrelevant or inappropriate messages from appearing.
+
+As a User, I want to access a digital library, so that I can browse and read academic materials directly from the platform.
+
+As a User, I want to be able to search and filter books or materials by title, author, or subject, so that I can easily find the resources I need.
+
+As a Professor, I want to be able to upload and share course materials, so that students can easily access them in a centralized place.
+
+As an Administrator, I want to manage and approve uploaded library content, so that I can ensure only verified and relevant materials are available.
+
+As a Student, I want to view my academic record and grades, so that I can keep track of my academic progress.
+
+As a Student, I want to access a digital version of my student card, so that I can easily prove my student status when needed.
+
+As a Professor, I want to access student records (only for the courses I teach), so that I can verify attendance, performance, and grades.
+
+As an Administrator, I want to be able to update or correct academic history data, so that student records remain accurate and up to date.
+
+As a Student, I want to automatically generate and download official documents (such as a student certificate or transcript), so that I can quickly obtain the necessary paperwork without visiting the office.
+
+As an Administrator, I want to manage the templates and formats of automatically generated documents, so that all official files follow the university standards.
+
+As a Student, I want to track the status of my document requests, so that I know when they are ready for download or approval.
+
+As a User, I want to access an interactive campus map, so that I can easily locate buildings, classrooms, and facilities.
+
+As a User, I want to see which rooms are currently available or occupied, so that I can find free study spaces.
+
+As a Professor, I want to view what classes or labs are scheduled in each room, so that I can plan my sessions accordingly.
+
+As an Administrator, I want to manage and update room data on the map, so that it always reflects real-time availability.

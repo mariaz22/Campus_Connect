@@ -1,0 +1,35 @@
+Scenario 1: Onboarding and Daily Student Life
+Scenario Name: First Week and Immediate Needs Access
+
+Persona of Actor: Sophia Flores (Student)
+
+Overall Objective: Sophia needs quick access to her student status, check her academic progress immediately, and ensure she doesn't miss a critical notification.
+
+Sophia is waiting in line at the campus library, anxious to check her borrowing privileges. She remembers she needs to show her student card. Instead of searching for the plastic card, she quickly opens the CampusConnect web app. She navigates to the profile and taps Digital Student Card, which instantly displays a valid, current QR code and her photo. Later, feeling nervous, she checks the Academic Record section and sees her first midterm grade has been posted. As she closes the grade view, a prominent notification bubble pops up (New Announcement Notification) showing an urgent alert from her faculty about a required prerequisite change. This constant, easy access to information and instant status validation saves her time and avoids the risk of forgetting or losing her login credentials.
+
+Scenario 2: Crisis Communication and Group Coordination
+Scenario Name: Urgent Meeting Change and Research Group Setup
+
+Persona of Actor: Professor Leo Vance (Professor)
+
+Overall Objective: Leo must quickly communicate an unavoidable, last-minute room change only to the affected students and efficiently structure a new research working group.
+
+Professor Vance receives an emergency alert that his seminar room is double-booked. He logs into CampusConnect immediately. He accesses the Publish New Announcement tool and drafts the message, specifying the new room number and time. To ensure surgical precision, he uses the Target Announcement to Specific Groups menu and selects only his "4th Year Thesis Seminar" group, deliberately excluding the administrative staff and other students to prevent noise. After publishing, he reviews the official journal submission guidelines that the university had posted recently. Knowing these are complex and will be needed repeatedly, he clicks the Bookmark icon (Save Announcement) to file the link in his personal saved list for easy retrieval later. He then creates a new working group in the Group Management area for a new publication, ensuring that he can Accept or Reject Members based on their contribution status, maintaining high standards for collaboration.
+
+Scenario 3: Compliance, Audit, and Infrastructure Verification
+Scenario Name: Security Audit and Facility Data Integrity Check
+
+Persona of Actor: Dr. Marcus Aurelian (Administrator)
+
+Overall Objective: Dr. Aurelian needs to enforce user policies, correct a critical historical data error, and ensure the virtual map infrastructure is up-to-date for campus efficiency.
+
+Dr. Aurelian begins by reviewing the daily access logs. He finds an account with Administrator Role that has attempted too many sensitive operations. He immediately uses the Admin Management panel to Deactivate or Suspend the account, pending a manual security review, thereby preventing further platform violations. Next, the Registrar calls about a student whose academic record requires correction from a decade ago. Dr. Aurelian accesses the Update or Correct Academic History Data tool and successfully modifies the archived grade, ensuring historical data integrity. Finally, a new building annexation is complete. To update the campus resources, he accesses the Manage and Update Room Data utility. He confirms the new room locations and availability sensors are correctly mapped to the Interactive Campus Map before setting the data live.
+
+Scenario 4: Automated Services and Campus Resource Allocation
+Scenario Name: Document Automation and Ad-hoc Space Finding
+
+Persona of Actor: David Chen (Professor)
+
+Overall Objective: David must reduce manual paperwork by directing students to digital document generation and efficiently find an available campus space for an unexpected meeting.
+
+David is overwhelmed by physical requests for documents. He directs a student requesting proof of enrollment to the CampusConnect portal. He verifies the system is working by pulling up his Document Request Tracker to see the student's request status instantly move to "Ready for Download" after the Generate Official Documents process completes. This self-service feature is critical for reducing his workload. Later, his supervisor asks him to quickly find a medium-sized meeting room available right now. David opens the Interactive Campus Map and applies a filter to View Available Rooms in the relevant building. He instantly sees which classrooms are currently unoccupied, shown in green, and reserves one. This mechanism saves him from making disruptive calls to professors or maintenance staff.

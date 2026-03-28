@@ -1,0 +1,342 @@
+I. Authentication & User Management Features 
+
+1. Feature Name: User Registration 
+
+Activation: User accesses the registration page. 
+
+Input: Institutional Email Address, Password, Password Confirmation. 
+
+Action: Validates email format and password strength; Creates a new account in the database and assigns a default role (e.g., Student). 
+
+Output: Registration success message; Redirect to the login page or profile page. 
+
+2. Feature Name: User Authentication (Login) 
+
+Activation: User accesses the login page and submits credentials. 
+
+Input: Email, Password. 
+
+Action: Verifies credentials against the database; Validates user role and status. 
+
+Output: Access granted to the role-specific dashboard or an error message. 
+
+3. Feature Name: Profile Management 
+
+Activation: User clicks on "View/Edit Profile." 
+
+Input: User data fields (e.g., Status, Profile Picture, Contact Info). 
+
+Action: Updates the corresponding user record in the database. 
+
+Output: Display of the updated profile information; Success notification. 
+
+4. Feature Name: Role-Based Access Control 
+
+Activation: User logs into the platform. 
+
+Input: User's assigned Role (e.g., Student, Teacher) retrieved from the system. 
+
+Action: Filters the displayed navigation and functionalities to match the user's role permissions. 
+
+Output: A personalized interface showing only relevant features. 
+
+5. Feature Name: Account Deactivation/Suspension (Admin) 
+
+Activation: Administrator selects a user and clicks "Deactivate/Suspend Account." 
+
+Input: Target User ID, Reason for Suspension (from Admin). 
+
+Action: Changes the user's account status to 'Inactive' or 'Suspended' in the database. 
+
+Output: The targeted account becomes inaccessible; Confirmation message for the Administrator. 
+
+6. Feature Name: Grant Administrator Role (Admin) 
+
+Activation: Administrator selects a user and clicks "Grant Admin Role." 
+
+Input: Target User ID. 
+
+Action: Updates the user's role field in the database to 'Administrator'. 
+
+Output: User receives administrator permissions; Confirmation message for the Administrator. 
+
+II. Announcements & Events Features 
+
+7. Feature Name: View Chronological Announcements 
+
+Activation: User navigates to the Announcements section. 
+
+Input: Current date and time (from system). 
+
+Action: Retrieves and sorts all relevant announcements (based on user's role/groups) by publication date in descending order. 
+
+Output: A list of announcements displayed chronologically. 
+
+8. Feature Name: Filter Announcements by Category 
+
+Activation: User selects a category filter (e.g., "Academic," "Sports"). 
+
+Input: Selected Category Filter (from user). 
+
+Action: Re-queries the database to display only announcements matching the selected category. 
+
+Output: A list of announcements limited to the chosen category. 
+
+9. Feature Name: Bookmark/Save Announcement 
+
+Activation: User clicks the "Bookmark" icon on an announcement. 
+
+Input: Announcement ID. 
+
+Action: Creates a link between the User ID and the Announcement ID in a dedicated 'Saved' table. 
+
+Output: Confirmation that the announcement has been saved; The announcement appears in the user's 'Saved' list. 
+
+10. Feature Name: Add Reminder 
+
+Activation: User clicks "Add Reminder" on an event or task. 
+
+Input: Target Event/Task ID, Reminder Date and Time (from user). 
+
+Action: Schedules an entry in the user's notification/reminder system for the specified date and time. 
+
+Output: System sends a notification to the user at the scheduled time. 
+
+11. Feature Name: New Announcement Notification 
+
+Activation: A new announcement is published. 
+
+Input: New Announcement Content, Target Groups. 
+
+Action: Generates a real-time notification/email for all users belonging to the target groups. 
+
+Output: Notification banner or email received by targeted users. 
+
+12. Feature Name: View Upcoming Events List 
+
+Activation: User navigates to the Events section. 
+
+Input: Current Date (from system). 
+
+Action: Retrieves all events scheduled for the future and sorts them chronologically. 
+
+Output: A list of upcoming events with details (date, time, location). 
+
+13. Feature Name: Event Registration (RSVP) 
+
+Activation: User clicks "Register/RSVP" on an event. 
+
+Input: User ID, Event ID. 
+
+Action: Adds the User ID to the list of attendees for the selected Event ID. Checks for available spots. 
+
+Output: Registration confirmation; Event added to the user's personal calendar/list. 
+
+14. Feature Name: Publish New Announcement (Professor) 
+
+Activation: Professor clicks "Create New Announcement." 
+
+Input: Title, Content, Category, Target Group(s). 
+
+Action: Saves the announcement to the database with the professor's ID as the author; Triggers New Announcement Notification. 
+
+Output: Announcement is live and visible to the target groups. 
+
+15. Feature Name: Edit Announcement (Professor) 
+
+Activation: Professor clicks "Edit" on an existing announcement they authored. 
+
+Input: Announcement ID, New Title/Content/Target. 
+
+Action: Overwrites the existing content of the announcement in the database. 
+
+Output: Confirmation of update; Revised announcement is displayed. 
+
+16. Feature Name: Target Announcement to Specific Groups (Professor) 
+
+Activation: Professor selects specific groups during the announcement creation/editing process. 
+
+Input: Announcement ID, List of Target Group IDs. 
+
+Action: Associates the announcement with the selected group IDs, restricting visibility. 
+
+Output: Announcement is only visible to members of the selected groups. 
+
+17. Feature Name: Manage Group Members (Professor) 
+
+Activation: Professor navigates to the management page of a created group. 
+
+Input: User ID to be accepted/rejected, Group ID. 
+
+Action: Updates the membership status of the User ID within that Group ID. 
+
+Output: User is either added to or removed from the group; Confirmation message. 
+
+18. Feature Name: Delete Announcement (Administrator) 
+
+Activation: Administrator clicks "Delete" on an announcement. 
+
+Input: Announcement ID. 
+
+Action: Removes the announcement record from the database. 
+
+Output: Announcement is permanently removed from the platform. 
+
+III. Digital Library Features 
+
+19. Feature Name: Access Digital Library 
+
+Activation: User navigates to the Digital Library section. 
+
+Input: User ID and Role (for access verification). 
+
+Action: Loads the main interface for browsing academic materials. 
+
+Output: Display of the digital library homepage with browsing options. 
+
+20. Feature Name: Search and Filter Library Materials 
+
+Activation: User enters text in the search bar or selects a filter. 
+
+Input: Search query (Title, Author, Subject) or Filter selection. 
+
+Action: Interrogates the approved library content database using the input criteria. 
+
+Output: A list of matching books/materials displayed. 
+
+21. Feature Name: Upload Course Materials (Professor) 
+
+Activation: Professor clicks "Upload New Material." 
+
+Input: Digital File (PDF, DOCX, etc.), Title, Description, Course Association. 
+
+Action: Stores the file and creates a new database entry, marking it as 'Pending Approval'. 
+
+Output: Success message; Material is placed in the approval queue. 
+
+22. Feature Name: Manage and Approve Library Content (Admin) 
+
+Activation: Administrator views the 'Pending' list in the library management section. 
+
+Input: Material ID, Action (Approve/Reject). 
+
+Action: Updates the status of the Material ID to 'Approved' or 'Rejected' in the database. 
+
+Output: Approved material becomes publicly accessible in the library; Rejected material is removed or flagged. 
+
+IV. Academic Record & Student Card Features 
+
+23. Feature Name: View Academic Record/Grades (Student) 
+
+Activation: Student clicks "My Academic Record." 
+
+Input: Student ID. 
+
+Action: Retrieves the student's complete academic history and current grades from the core system. 
+
+Output: Display of the student's transcript and grades organized by semester/course. 
+
+24. Feature Name: Access Digital Student Card (Student) 
+
+Activation: Student clicks "Digital Student Card." 
+
+Input: Student ID, Latest Status Photo. 
+
+Action: Generates a secure, digital image or QR code representation of the student's validated status. 
+
+Output: A viewable digital student card on the mobile or web interface. 
+
+25. Feature Name: Access Student Records by Course (Professor) 
+
+Activation: Professor selects a course they teach and clicks "View Student Records." 
+
+Input: Professor ID, Course ID (from the courses they teach). 
+
+Action: Retrieves academic data (attendance, grades) only for the students enrolled in that specific course. 
+
+Output: List of enrolled students with relevant academic metrics for that course. 
+
+26. Feature Name: Update/Correct Academic Data (Admin) 
+
+Activation: Administrator searches for a student record and initiates an edit. 
+
+Input: Student ID, Field to correct (e.g., Grade, Attendance entry), New value. 
+
+Action: Updates the specific academic entry in the student's permanent record. 
+
+Output: Student record is updated and marked with an audit trail (Admin ID, Date). 
+
+V. Official Documents Features 
+
+27. Feature Name: Generate and Download Official Documents (Student) 
+
+Activation: Student selects a document type (e.g., Certificate of Enrollment) and clicks "Generate." 
+
+Input: Student ID, Document Type. 
+
+Action: Pulls personalized student data; Merges it into the template; Generates a secure (e.g., signed PDF) file. 
+
+Output: Downloadable official document (PDF). 
+
+28. Feature Name: Manage Document Templates (Admin) 
+
+Activation: Administrator navigates to the Document Template Management section. 
+
+Input: New Template File (.docx or specific format), Template Name. 
+
+Action: Uploads and configures the new template in the generation system, mapping data fields. 
+
+Output: New template is available for use. 
+
+29. Feature Name: Track Document Request Status (Student) 
+
+Activation: Student navigates to "My Document Requests." 
+
+Input: Student ID. 
+
+Action: Retrieves the status (e.g., Pending, Processing, Ready for Download) of all generated/requested documents. 
+
+Output: A list showing the status and date of each document request. 
+
+VI. Interactive Campus Map Features 
+
+30. Feature Name: Access Interactive Campus Map 
+
+Activation: User clicks "Campus Map." 
+
+Input: Current Time(from system). 
+
+Action: Loads the interactive map interface with buildings and facilities data. 
+
+Output: Display of the map; Search and location tools are available. 
+
+31. Feature Name: View Room Availability Status 
+
+Activation: User views the map or searches for a specific room. 
+
+Input: Room ID (from map selection) and Current Time (from system). 
+
+Action: Checks the room's current schedule against the current time to determine the status (Available/Occupied). 
+
+Output: Visual indicator (e.g., color code) and text status for the room. 
+
+32. Feature Name: View Room Schedule (Professor) 
+
+Activation: Professor selects a room on the map. 
+
+Input: Room ID, Date Range. 
+
+Action: Retrieves all classes/labs scheduled for that room during the selected period. 
+
+Output: A detailed daily or weekly schedule for the selected room. 
+
+33. Feature Name: Manage and Update Room Data (Admin) 
+
+Activation: Administrator accesses the Map Data Management module. 
+
+Input: Room ID, New Status/Availability/Location Data. 
+
+Action: Updates the room's static data (name, capacity, location coordinates) and feeds real-time data into the map system. 
+
+Output: Map reflects the latest information and availability status accurately.
+

@@ -1,0 +1,35 @@
+# Root .gitignore for the repository
+
+# Visual Studio / .NET
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+**/bin/
+**/obj/
+
+# Optional: compiled binaries/pdbs (if you don't intend to commit any .dlls)
+# Comment out if you intentionally commit library DLLs inside repo
+*.dll
+*.pdb
+
+# Rider/IDE
+.idea/
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+**/node_modules/
+dist/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
